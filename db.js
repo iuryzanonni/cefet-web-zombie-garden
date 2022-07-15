@@ -1,11 +1,11 @@
-import mysql from 'mysql2/promise'
+import mysql from "mysql2/promise";
 
 const pool = mysql.createPool({
   // configuração de acesso
-  host: '127.0.0.1',
-  database: 'zombies',
-  user: 'root',
-  password: '123456',
+  host: "127.0.0.1",
+  database: "zombies",
+  user: "root",
+  password: "root",
   port: 3306,
 
   // configuração das conexões
@@ -14,7 +14,7 @@ const pool = mysql.createPool({
   // configuração da pool
   waitForConnections: true,
   connectionLimit: 10,
-  queueLimit: 0
-})
+  queueLimit: 0,
+});
 
-export default pool
+export default pool;
